@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../Curso_HTML-Basico"
+		},
+		{
+			"path": "../Curso-HTML-Avançado"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Curso-Inovand-CSS",
+		"java.project.sourcePaths": [
+			"Aula 1/Desafio 3",
+			"Aula 1/Desafio 2",
+			"Aula 1/Desafio 1",
+			"Aula 1/Hello World"
+		]
+	}
+}

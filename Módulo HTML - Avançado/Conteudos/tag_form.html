@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Tag FORM</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .container{
+        padding: 25%;
+        padding-top: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        
+        <h2 align="center">Atributos da <i>tag</i> <b>FORM</b></h2>
+        <br><hr>
+        <div> <!-- Formulário Simples -->
+            <h2>Formulários Simples</h2>
+            <br>
+            <FORM ACTION="email@email.com" METHOD="get">
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=TEXT  NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Estado: <INPUT TYPE =text NAME="uf" SIZE="2" VALUE="SP"></FONT></P>
+            </FORM>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Formulário Simples -->
+            <h2>Formulário com Senha</h2>
+            <br>
+            <form action="lucas10.tamura@gmail.com" method="get">
+                <p>
+                    <font face="Calibri"> 
+                        Nome:
+                    </font>
+                    <input type="text" name="nome" size="25" maxlength="50">
+                </p>
+                <p>
+                    Nº do cartão de crédito
+                    <input type="text" name="num_cartao" size="16">
+                </p>
+                <p>
+                    Senha:
+                    <input type="password" name="senha" size="6">
+                </p>
+            </form>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- INPUT do tipo RADIO -->
+            <h2>INPUT do type RADIO</h2>
+            <br>
+            <FORM ACTION="email@email.com" METHOD="get">
+    
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+                <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+                <P>Selecione a bandeira do cartão de crédito:<BR>
+                    <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA
+                    <BR>
+                    <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+                </P>
+            </FORM>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- INPUT do tipo CHECKBOX -->
+            <h2>INPUT do tipo CHECKBOX</h2>
+            <br>
+            <FORM ACTION="email@email.com" METHOD="get">
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+                <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+                <P>Selecione a bandeira do cartão de crédito:<BR>
+                    <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                    <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+                <P>Selecione horário de entrega:<BR>
+                    <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR>
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+            </FORM>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Inserindo uma área de texto -->
+            <h2>Inserindo uma área de texto</h2>
+            <FORM ACTION="email@email.com" METHOD="get">
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+                <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+                <P>Selecione a bandeira do cartão de crédito:<BR> 
+                    <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                    <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+                <P>Selecione horário de entrega:<BR> 
+                    <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+                <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+                <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "40"></TEXTAREA></P>
+             </FORM>
+             <br><hr><br>
+        </div>
+
+        <div><!-- Botões de SUBMIT e RESET -->
+            <h2>Botões de SUBMIT e RESET</h2>
+            <br>
+            <FORM ACTION="lucas10.tamura@gmail.com" METHOD="get">
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+                <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+                <P>Selecione a bandeira do cartão de crédito:<BR>
+                    <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                    <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+                <P>Selecione horário de entrega:<BR> 
+                    <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+                <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+                <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "30"></TEXTAREA></P>
+                <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar">
+             </FORM>
+             <br><hr><br>
+        </div>
+
+        <div> <!-- Inserindo Campo Oculto -->
+            <h2>Inserindo campo oculto</h2>
+            <FORM ACTION="email@email.com" METHOD="get">
+                <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+                <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+                <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+                <P>Selecione a bandeira do cartão de crédito:<BR> 
+                    <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                    <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+                <P>Selecione horário de entrega:<BR> 
+                    <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+                    <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+                <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+                <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "30"></TEXTAREA></P>
+                <INPUT TYPE=submit VALUE="Enviar">
+                <INPUT TYPE=reset VALUE="Limpar">
+                <INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro">
+            </FORM>
+            <br><hr><br>
+        </div>
+
+        <div>
+            <h2>Lista de Opções ou Menu</h2>
+            <br>
+            <H3>EXEMPLO DE LISTA DE OPÇÕES</H3>
+            <H4>Escolha a cidade que deseja conhecer</H4>
+            <FORM>
+                <SELECT NAME="cidades" SIZE="4">
+                    <OPTION>Londres 
+                    <OPTION>Paris
+                    <OPTION>Roma 
+                    <OPTION>Madri
+                </SELECT>
+            </FORM>
+            <br>
+            <H3>EXEMPLO DE MENU</H3>
+            <H4>Escolha a cidade que deseja conhecer</H4>
+            <FORM>
+                <SELECT NAME="cidades">
+                   <OPTION>Londres 
+                   <OPTION>Paris
+                   <OPTION>Roma 
+                   <OPTION>Madri
+                </SELECT>
+            </FORM>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

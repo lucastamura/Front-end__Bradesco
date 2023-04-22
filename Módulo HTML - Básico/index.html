@@ -1,0 +1,689 @@
+<html>
+    <head>
+        <title>Curso HTML - Básico</title>
+        <link rel="icon" href="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
+    </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        
+        text-align: center;
+    }
+    header {
+        background: #333;
+        width: 100%;
+        position:fixed;
+        padding: 10px;
+    }
+    .container{
+        padding: 50px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    h1{
+        font-size: 40;
+        color: #034875;
+        text-align: center;
+    }
+    h2{
+        font-size: 25;
+        color: #2875a8;
+        text-align: center;
+    }
+    h3{
+        font-size: 20;
+        color: #629bc1;
+        text-align: center;
+    }
+    .esquerda{
+        text-align: left;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .linkimage{
+        width: 50px;
+    }
+    .imgmapeada{
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <a href="" text-align="center"><font color="#FFF" size="3">Início</font></a>
+    </header>
+
+    <!--Corpo do site-->
+    <div class="container">
+
+         <!--ÍNDICE-->
+        <section id="indice">
+            <br><h1>Conteúdos aplicados no curso de HTML - Básico</h1><br><hr><br>
+
+            <div class="flex">
+                <div>
+                
+                    <h1>Exercícios</h1><br>
+    
+                    <a href="./Exercício 1/Exerc1.html" target="_blank">Exercício 1</a><br>
+                    <a href="./Exercício 2/Exerc2.html" target="_blank">Exercício 2</a><br>
+                    <a href="./Exercício 3/Exerc3.html" target="_blank">Exercício 3</a><br>
+                    <a href="./Exercício 4/Exerc4.html" target="_blank">Exercício 4</a><br>
+                    <a href="./Exercício 5/Exerc5.html" target="_blank">Exercício 5</a><br>
+                    <a href="./Exercício 6/Exerc6.html" target="_blank">Exercício 6</a><br>
+    
+                </div>
+    
+                <div>
+                    <h1>Índice</h1><br>
+    
+                    <a href="#efeitos">Efeitos</a><br>
+                    <a href="#fonte">Alterando fontes</a><br>
+                    <a href="#quebra-de-linha">Quebra de linha</a><br>
+                    <a href="#divisor"> Linha horizontal</a><br>
+                    <a href="#subtitulo"> Títulos e Subtítulos</a><br>
+                    <a href="#comentario">Comentários</a><br>
+                    <a href="#perf">Tag <i>performatted</i></a><br>
+                    <a href="#lista">Listas</a><br>
+                    <a href="#imagens">Imagens</a><br>
+                    <a href="#links"><i>Links</i></a><br>
+                    <a href="#alista">Tag Anchor com lista</a><br>
+                    <a href="#aimage">Tag Anchor com imagem</a><br>
+                    <a href="#mapeada">Imagem Mapeada</a><br>
+                </div>
+            </div>
+
+
+
+            <br><hr><br>
+        </section>
+
+        <!--EFEITOS-->
+        <sectio id="efeitos">
+
+            <h1>Efeitos</h1><br>
+            
+            <div id="NEGRITO">
+                <h2><b>Negrito</b></h2><br>
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='2' cols='40'><b> Texto </b>
+                    </textarea>
+                </div><br><br>
+                <p>Resultado:<p/>
+                <div>
+                    <b> Texto </b>
+                    <p> Texto da página <b>web</b>.
+                </div>
+                <br><br>
+            </div>
+
+            <div id="ITÁLICO">
+                <h2><i>Itálico</i></h2><br>
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='2' cols='40'><i> Texto </i>
+                    </textarea>
+                </div><br><br>
+    
+                <p>Resultado:<p/>
+                <div>
+                    <i> Texto </i>
+                    <p> Texto da página <i>web</i>.
+                </div>
+                <br><br>
+            </div>
+
+            <div id="SUBLINHADO">
+                <h2><u>Sublinhado</u></h2><br>
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='2' cols='40'><u> Texto </u>
+                    </textarea>
+                </div><br><br>
+    
+                <p>Resultado:<p/>
+                <div>
+                    <u> Texto </u><br>
+                    <p> Texto da página <u>web</u>.</p>
+                </div>
+                <br><br>
+            </div>
+            <hr>
+        </section>
+    
+        
+        <!--ALTERANDO FONTES-->
+        <sectio id="fonte">
+    
+            <br><h1>Alterando Fontes</h1><br><br>
+
+            <div id="Estilo de Fonte">
+                
+                <h2>Alterando estilo de fonte</h2><br>
+                <p>Esta frase será visualizada com a fonte padrão.</p>
+
+                <p><font face="Comic Sans MS">Esta frase será viasualizada com a fonte Comic Sans MS.</font></p><br>
+                
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='2' cols='50'><p><font face="Comic Sans MS"></font></p>
+                    </textarea>
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="Tamanho da Fonte">
+                <h2>Alterando tamanho da fonte</h2><br>
+                <font size="1">Tamanho: 1</font><br>
+                <font size="2">Tamanho: 2</font><br>
+                <font size="3">Tamanho: 3</font><br>
+                <font size="4">Tamanho: 4</font><br>
+                <font size="5">Tamanho: 5</font><br>
+                <font size="6">Tamanho: 6</font><br>
+                <font size="7">Tamanho: 7</font><br>   
+
+                <br><br>
+
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='8' cols='50'><font size="1">Tamanho: 1</font>&#10;<font size="2">Tamanho: 2</font>&#10;<font size="3">Tamanho: 3</font>&#10;<font size="4">Tamanho: 4</font>&#10;<font size="5">Tamanho: 5</font>&#10;<font size="6">Tamanho: 6</font>&#10;<font size="7">Tamanho: 7</font> 
+                    </textarea>
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="Cor da Fonte">
+                <h2>Alterando cor da fonte</h2><br>
+                <p><font face="Verdana" size="5" color="3289c7">Frase visualizada com a fonte Verdana, tamanho 5 e com uma das tonalidade da cor azul</font></p>
+                <br><br>
+                <p>Código:</p>
+                <div>
+                    <textarea readonly rows='2' cols='75'><p><font face="Verdana" size="5" color="3289c7"></font></p>
+                    </textarea>
+                </div>
+                <br><br><br>
+                
+                
+            </div>
+            <hr>
+        </section>
+    
+        
+        <!--QUEBRA DE LINHA-->
+        <sectio id="quebra-de-linha">
+            
+            <br><h1>Quebra de linha</h2>
+
+            <br><br>
+
+            <h2>Sem &lt;br&gt;</h2><br>
+            
+            <p class="esquerda">Quanto o código HTML não informa ao navegador onde deve ocorrer a quebra de linha.</p>
+            <p class="esquerda">O usuário vera o conteudo de acordo com o tamanho da janela.</p><br>
+
+            <p>Código:</p>
+            <div>
+                <textarea readonly rows='3' cols='120'><p class="esquerda">Quanto o código HTML não informa ao navegador onde deve ocorrer a quebra de linha.</p>&#10;<p class="esquerda">O usuário vera o conteudo de acordo com o tamanho da janela.</p>
+                </textarea>
+            </div>
+            <br>
+            <br>
+            <h2>Com &lt;br&gt;</h2>
+            
+            <p class="esquerda">Quanto o código HTML não informa ao navegador onde deve ocorrer a quebra de linha <br>
+                   O usuário vera o conteudo de acordo com o tamanho da janela.</p><br>
+            <p>Código:</p>
+            <div>
+                <textarea readonly rows='3' cols='120'><p class="esquerda">Quanto o código HTML não informa ao navegador onde deve ocorrer a quebra de linha <br> O usuário verá o conteudo de acordo com o tamanho da janela.</p>
+                </textarea>
+            </div>
+
+            <br><br><br>
+            <hr>
+        </section>
+    
+        
+        <!--Linhas Horizontais-->
+        <sectio id="divisor">
+            <br><br><br><h1>Linhas Horizontais</h1><br>
+
+            <hr>
+            <b>Dados Pessoais:</b><br>
+            Nome: <br>
+            E-mail:
+            <hr>
+            <b>Dados bancários:</b><br>
+            Banco: <br>
+            Agência: <br>
+            Conta corrente:<hr>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='10'><hr>
+                </textarea>
+            </div>
+            <br><br><br><br><br>
+            <hr>
+    
+        </section>
+    
+        
+        <!--SUBTÍTULOS-->
+        <section id="subtitulo">
+            <BR></BR><h1>Subtítulos</h1><BR>
+            
+            <h1><b>1. Linguagem de marcação HTML</b></h1><br>
+            <p>O HTML é uma das linguagens de marcação mais utilizadas</p><br><br>
+            
+            <h2><b>1.1 Breve Histórico</b></h2><br>
+            <p>Tudo começou quando em...</p>
+            <br><br><br>
+            <hr>
+        </section>
+    
+        <!--COMENTÁRIO-->
+        <section id="comentario">
+            <br><h1>Comentários</h1>
+
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='25'><!-- Comentário -->>
+                </textarea>
+            </div>
+
+            
+            <!--Esta parte do texto precisa ser revisada. Ficará como comentário.
+            <p>O HTML é uma das linguagens de marcação mais utilizadas-->
+
+            <br><br><br><hr>
+    
+        </section>
+    
+        
+        <!-- TAG PERFORMATTED -->
+        <section id="perf">
+    
+            <br><h1>Tag <i>preformatted</i></h1>
+            <br><br>
+    
+            <h2>Sem &lt;pre&gt;</h2><br>
+            <!--Trecho da música Pastorinha de Noel Rosa (Domínio Público)-->
+            <p>A estrela d'alva no céu desponta
+                    E a lua anda tonta com tamanho esplendor
+                E as pastorinhas pra consolo da lua
+                    Vão cantando na rua lindos versos de amor
+            </p><br><br><br>
+    
+            <h2>Com &lt;pre&gt;</h2><br>
+            
+            <pre>
+                <p>A estrela d'alva no céu desponta
+        E a lua anda tonta com tamanho esplendor
+    E as pastorinhas pra consolo da lua
+        Vão cantando na rua lindos versos de amor
+                </p>
+            </pre>
+            <br><br>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'><hr><pre> <p> Texto com formatação </p></pre>
+                </textarea>
+            </div>
+            
+            <br><br><hr>
+        </section>
+    
+        <!-- CRIANDO LISTAA -->
+        <section id="lista">
+            
+            <br>
+            <h1>Listas</h1><br><br>
+
+            <div id="LISTA ORDENADA">
+                <h2>Lista ordenada</h2><BR><br>
+                
+                <div class="esquerda">
+                    <p><font fac
+                        e="Calibri" size="4">Para criar um documento HTML é necessárop seguir os passos abaixo.</font></p>
+                    <ol class="esquerda"><br>
+                        <li>Acessar o Bloco de Notas.</li>
+                        <li>Indicar atraés da <i>tag </i> &#60;HTML&#62; o tipo de documento criado.</li>
+                    </ol><br>
+                    
+                <p>Esses são os primeiros passos para se criar uma página <i>web</i>.
+                </div>
+                </p><br><br>
+            </div>    
+
+            <div id="LISTA NÃO ORDENADA">
+                <h2>Lista não ordenada</h2><br><br>
+                <div class="esquerda">
+                    <p><font face="Calibri" size="4">Segue abaixo lista de materiais necessários:</font></p><br>
+                    <ul>
+                        <li>Leads</li>
+                        <li>Conectoes</li>
+                        <li>Chave de Fenda Philips</li>
+                        <li>Alicate</li>
+                </div>
+
+                </ul><br><br>
+            </div>
+
+            <div id="LISTA INTERCALADA">
+                <h2>Lista Intercalada</h2><br><br>
+                <div class="esquerda">
+                    <p><font face="Calibri" size="4">Principais características dos <i>notebooks</i> pesquisados:</font></p><br>
+                    <ol>
+                        <li>Orange</li>
+                        <ul>
+                            <li>Tela sensível ao toque de 13"</li>
+                            <li>3 entradas de USP</li>
+                        </ul>
+                        <li>Lemon</li>
+                        <ul>
+                            <li>Tela sensível ao toque de 15"</li>
+                            <li>2 entradas de USB</li>
+                        </ul>
+                    </ol><br>
+                    <p>Após a análise o grupo deverá escolher a melhor opção para o trabalho a ser realizado.</p>
+                    <br><br><br>
+                </div>
+            </div>
+
+            <div>
+                <h2>Personalização</h2><br><br>
+
+                <h3>Letras grandes - type="A"</h3>
+                <div class="esquerda">
+                    <ol type="A">
+                        <li>Acordar</li>
+                        <li>Escovar os dentes</li>
+                        <li>Tomar café da manhã</li>
+                    </ol>
+                </div>
+
+        
+                <h3>Letras pequenas - type="a"</h3>
+                <div class="esquerda">
+                    <ol type="a">
+                        <li>Acordar</li>
+                        <li>Escovar os dentes</li>
+                        <li>Tomar café da manhã</li>
+                    </ol>
+                </div>
+        
+                <h3>Números romanos grandes = type="I"</h3>
+                <div class="esquerda">
+                    <ol type="I">
+                        <li>Acordar</li>
+                        <li>Escovar os dentes</li>
+                        <li>Tomar café da manhã</li>
+                    </ol>
+                </div>
+        
+                <h3>Letras pequenas - type="i"</h3>
+                <div class="esquerda">
+                    <ol type="i">
+                        <li>Acordar</li>
+                        <li>Escovar os dentes</li>
+                        <li>Tomar café da manhã</li>
+                    </ol>
+                </div>
+        
+                <h3>Disco - type="disc"</h3>
+                <div class="esquerda">
+                    <ul type="disc">
+                        <li>Farinha</li>
+                        <li>Ovo</li>
+                        <li>Leite</li>
+                        <li>Sal</li>
+                    </ul>
+                </div>
+
+        
+                <h3>Cisculo - type="circle"</h3>
+                <div class="esquerda">
+                    <ul type="circle">
+                        <li>Farinha</li>
+                        <li>Ovo</li>
+                        <li>Leite</li>
+                        <li>Sal</li>
+                    </ul>
+                </div>
+        
+                <h3>Quadrado - type="square"</h3>
+                <div class="esquerda">
+                    <ul type="square">
+                        <li>Farinha</li>
+                        <li>Ovo</li>
+                        <li>Leite</li>
+                        <li>Sal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br><br><br><hr>
+        </section>
+    
+        <!-- IMAGENS -->
+        <section id="imagens">
+            <br><br>
+            <h1>Imagens</h1><br><br>
+
+            <h2>Inserindo Imagens</h2><br>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='35'> <img src="endereço da imagem">
+                </textarea>
+            </div>
+            <br>
+
+            <img style="width: 100px;" src="https://d1vs1x3ni0c692.cloudfront.net/wp-content/uploads/2019/02/06030257/parceiro-fundacaobradesco-e1549434559481.png">
+            <br>
+            <br>
+
+            <h2>Alinhando imagem</h2><br><br>
+
+            <h3>Topo</h3><br>
+
+            <p>Exemplo de texto. <img style="width: 50px;" src="https://images.vexels.com/media/users/3/134131/isolated/lists/b87002ac73e796d6e3460a6f27247cfb-desenho-de-estrela-11.png" align="top"> Exemplo de texto.</p>
+            
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'> <img src="endereço da imagem" align="top">
+                </textarea>
+            </div>
+            <br><br><br>
+
+            <h3>Rodapé</h3><br>
+            <p>Exemplo de texto. <img style="width: 50px;" src="https://images.vexels.com/media/users/3/134131/isolated/lists/b87002ac73e796d6e3460a6f27247cfb-desenho-de-estrela-11.png" align="bottom"> Exemplo de texto.</p>
+            
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'> <img src="endereço da imagem" align="bottom">
+                </textarea>
+            </div>
+            <br><br><br>
+
+            <h3>Meio</h3><br>
+            <p>Exemplo de texto. <img style="width: 50px;" src="https://images.vexels.com/media/users/3/134131/isolated/lists/b87002ac73e796d6e3460a6f27247cfb-desenho-de-estrela-11.png" align="middle"> Exemplo de texto.</p>
+            
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'> <img src="endereço da imagem" align="middle">
+                </textarea>
+            </div>
+            <br><br><br>
+
+            <h3>Direira</h3><br>
+            <p>Exemplo de texto. <img style="width: 50px;" src="https://images.vexels.com/media/users/3/134131/isolated/lists/b87002ac73e796d6e3460a6f27247cfb-desenho-de-estrela-11.png" align="right"> Exemplo de texto.</p>
+            
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'> <img src="endereço da imagem" align="right">
+                </textarea>
+            </div>
+            <br><br><br>
+
+            <h3>Esquerda</h3><br>
+            <p>Exemplo de texto. <img style="width: 50px;" src="https://images.vexels.com/media/users/3/134131/isolated/lists/b87002ac73e796d6e3460a6f27247cfb-desenho-de-estrela-11.png" align="left"> Exemplo de texto.</p>
+                        
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='50'> <img src="endereço da imagem" align="left">
+                </textarea>
+            </div>
+            <br><br><br>
+
+            <br><br><br><hr>
+            
+        </section>
+
+        <!-- LINK's -->
+        <section id="links">
+            <br><br><h1>Links</h1><br><br>
+    
+            <h2>Criando Links</h2><br>
+            <p><font face="Calibri" size="">Inserindo <i>link</i> em um texto.</p>
+            <a href="http://www.google.com">Clique aqui</a> para acessar o Google</font><br>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='25'><a href="link"></a>
+                </textarea>
+            </div>
+            <br><br>
+    
+
+            <h2>Linkando e-mail</h2>
+            <a href="mailto:lucas10.tamura@gmail.com">Entre em contato</a>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='2' cols='40'><a href="mailto:email@email.com"></a>
+                </textarea>
+            </div>
+            <br><br>
+            
+
+            <h2>Link de uma seção na mesma página</h2><br>
+
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='6' cols='50'> <a href="#Capitulo I"></a> &#10; <a href="#Capitulo II"></a> &#10;=================================== &#10; <a name="Capitulo I"></a> &#10; <a name="Capitulo II"></a>
+                </textarea>
+            </div><br><br>
+            <p><font face="Calibri">Inserindo <i>links</i> criando seções</p>
+            <p>Neste exemplo você verá que, quando o texto for muito grande você poderá criar <i>links</i> que levem o usuário diretamente ao ponto desejado.</p><br>
+            <a href="#Capítulo I">O que é HTML?</a><br>
+            <a href="#Capítulo II">Principais comandos</a>
+            <br><br><br><br>
+            <a name="Capítulo I">
+                <h2>O que é HTML?</h2>
+                <p>HTML é uma das linguagem de marcação mais conhecidas e utilza um formato simples de código que pode ser ferado sem a ajuda de aplicativos especiais.</p>
+                <p>Para criar um documento HTML, todo o que você precisa é de um editor de texto de ASCII como o NotePade (Bloco de Notas), por exemplo. Se você precisar verificar a formatação do documento durante a criação, pode usar qualquer navegador, pois todos eles são capazes de interpretar o código.</p>
+            </a>
+            <a name="Capítulo II">
+                <h3>Principais comandos</h3>
+                <p>Os comandos são inseridos no código entre os sinais de menor que "<" e maior que ">" e são chamados de <i>tags</i>.</p>
+            </a>
+            </font>
+                    
+            <br><br><br><br>
+
+    
+    
+            <h2>Cores do link</h2><br>
+            <a href="https://github.com/lucastamura" target="_blank" link="black" vlink="blue" alink="green">Link</a><br>
+            <br><p>Código:</p>
+            <div>
+                <textarea readonly rows='5' cols='60'><a link="Cor do link antes de ser acessado" &#10;   vlink="Após acessar vai ficar dessa cor" &#10;   alink="Cor quando passa o mouse em cima"> &#10; </a>
+                </textarea>
+            </div>
+            <br><br><br> <hr>
+        </section>
+    
+       
+        <!-- TAG ANCHOR COM LIsSTA -->
+        <section id="alista">
+            <br><br><h1>Tag ANCHOR e as tags de formatação</h1><br><br>
+            <p><font face="Calibri" size="5">Combinado a <i>tag</i> ANCHOR com as <i>tags</i> de formatação.</font></p><br>
+    
+            <ol class="esquerda">
+                <li><a href="#Exerc1"><font color="green">Reveja o exercício 1</font></a></li>
+                <li><a href="#Exerc2"><font color="red">Reveja o exercício 2</font></a></li>
+                <li><a href="#Exerc3"><font color="purple">Reveja o exercício 3</font></a></li>
+            </ol>
+
+            <br><br><br><br><br><br>
+            <a name="Exerc1">
+                <h2>Exercício 1</h2>
+            </a>
+            <br><br><br>
+            <p>Conteudo do exercício 1</p>
+            <br><br><br>
+
+            <a name="Exerc2">
+                <h2>Exercício 2</h2>
+            </a>
+            <br><br><br>
+            <p>Conteudo do exercício 1</p>
+            <br><br><br>
+
+            <a name="Exerc3">
+                <h2>Exercício 3</h2>
+            </a>
+            <br><br><br>
+            <p>Conteudo do exercício 1</p>
+            <br><br><br><hr>
+    
+        </section>
+    
+        <!-- TAG ACHOR E IMAGEM -->
+        <section id="aimage">
+            <br><br><h1>Tag ANCHOR e tag IMAGE</h1><br><br>
+    
+            <p><FONT face="Calibri" size="3">Combinando a <i>tag</i> ANCHOR com a <i>tag</i> IMAGE.</p><br>     
+            <ul class="esquerda">
+                <li><a href="Produtos.html"><img class="linkimage" src="https://cdn.icon-icons.com/icons2/157/PNG/256/shipping_products_22121.png">Produtos</a><br>
+                <li><a href="Serviços.html"><img class="linkimage" src="https://cdn.icon-icons.com/icons2/1572/PNG/512/3592840-cog-gear-machine-office-radio-settings-setting-settings_107729.png">Serviços</a><br>
+                <li><a href="Contato.html"><img class="linkimage" src="https://cdn.icon-icons.com/icons2/2063/PNG/512/contact_book_contacts_notebook_icon_124667.png">Contato</a><br>
+            </ul>
+            </FONT>
+            <br><br><br><hr>
+        </section>
+    
+        <!-- IMAGEM MAPEADA -->
+        <section id="mapeada">
+            <br><br><h1>Imagem mapeada</h1><br><br>
+
+            <ul class="esquerda">
+                <li>Item 1 - Fundação Bradesco</li>
+                <li>Item 2 - Escola Virtual</li>
+                <li>Item 3 - Portal da Educação</li>
+                <li>Item 4 - Google</li>
+                <li>Item 5 - Fundação Bradesco</li>
+            </ul>
+    
+            <img class="imgmapeada" src="/Image/imagem_menu.gif" usemap="#menu" border="0">
+    
+            <map name="menu">
+                <area shape="rect" coords="11,13,115,52" href="http://www.fb.org.br" alt="Item 1" target="_blank">
+                <area shape="rect" coords="11,55,114,94" href="http://www.ev.org.br" alt="Item 2" target="_blank">
+                <area shape="rect" coords="11,99,114,137" href="http://www.educacao.org.br" alt="Item 3" target="_blank">
+                <area shape="rect" coords="11,142,114,180" href="http://www.google.com.br" alt="Item 4" target="_blank">
+                <area shape="rect" coords="11,184,115,221" href="http://www.fb.org.br" alt="Item 5" target="_blank">
+            </map>
+        </section>
+    
+    </div>
+
+
+</body>
+</html>

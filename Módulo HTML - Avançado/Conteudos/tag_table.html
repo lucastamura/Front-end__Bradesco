@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Curso de HTML - Avnaçado</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .container{
+        padding: 25%;
+        padding-top: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        
+        <h2 align="center">Atributos da <i>tag</i> <b>TABLE</b></h2>
+        <br><hr>
+        <div> <!-- Tabela Simples -->
+            <h3>Tabela Simples</h3>
+            <br>
+            <table>
+                <tr>
+                   <td> Nome </td>
+                   <td> Sobrenome </td>
+                <tr>
+                   <td> Anna </td>
+                   <td> Santos </td>
+                <tr>
+                   <td> Vanessa </td>
+                   <td> Medeiros </td>
+            </table>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Atributo BORDER -->
+            <h3>Atributo BORDER</h3>
+            <br>
+            <table border="1">
+                <tr>
+                   <td> Nome </td>
+                   <td> Sobrenome </td>
+                <tr>
+                   <td> Anna </td>
+                   <td> Santos </td>
+                <tr>
+                   <td> Vanessa </td>
+                   <td> Medeiros </td>
+            </table>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Atributo BORDERCOLOR -->
+            <h3>Atributo BORDERCOLOR</h3>
+            <br>
+            <table border="1" bordercolor="#FF6600">
+                <tr>
+                    <td> Nome </td>
+                    <td> Sobrenome </td>
+                <tr>
+                    <td> Anna </td>
+                    <td> Santos </td>
+                <tr>
+                    <td> Vanessa </td>
+                    <td> Medeiros </td>
+            </table>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Atributo BGCOLOR -->
+            <h3>Atributo BGCOLOR</h3>
+            <br>
+            <p>BGCOLOR utilizado na tag TABLE</p>
+            <table border="1" bordercolor="#FF6600" bgcolor="CCFFFF">
+            <tr>
+                <td> Nome </td>
+                <td> Sobrenome </td>
+            <tr>
+                <td> Anna </td>
+                <td> Santos </td>
+            <tr>
+                <td> Vanessa </td>
+                <td> Medeiros </td>
+            </table>
+            <br>
+            <p>BGCOLOR utilizado nas tags TR e TD</p>
+            <table border="1" bordercolor="#FF6600">
+                <tr bgcolor="CCFFFF">
+                <td> Nome </td>
+                <td> Sobrenome </td>
+                <tr>
+                <td> Anna </td>
+                <td> Santos </td>
+                <tr>
+                <td> Vanessa </td>
+                <td bgcolor="CCFFFF"> Medeiros </td>
+            </table>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Atributo BACKGROUND -->
+            <h3>Atributo BACKGROUND</h3>
+            <br>
+            <table border="1" bordercolor="#FF6600" background="https://2img.net/h/images1.wikia.nocookie.net/__cb20100702191955/winx/images/thumb/8/8f/Stellacamping.png/73px-Stellacamping.png">
+                <tr>
+                   <td> Nome </td>
+                   <td> Sobrenome </td>
+                <tr>
+                   <td> Anna </td>
+                   <td> Santos </td>
+                <tr>
+                   <td> Vanessa </td>
+                   <td> Medeiros </td>
+            </table>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <div> <!-- Atributo HEIGHT e WIDTH -->
+            <h3>Atributo height e width</h3>
+            <TABLE WIDTH="300" HEIGHT="20%" BORDER="2">
+                <TR BGCOLOR= #E0EEEE>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+                <TR>
+                    <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE>
+                    <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <div> <!-- Atributo ALIGN -->
+            <h3>Atributo ALIGN</h3>
+            <br>
+
+            <p>Align LEFT</p>
+            <TABLE WIDTH="150" HEIGHT="20%" BORDER="2" ALIGN="#">
+                <TR BGCOLOR= #E0EEEE>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+                <TR>
+                    <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE>
+                    <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            <br>
+
+            <p>Align CENTER</p>
+            <br>
+            <TABLE WIDTH="150" HEIGHT="20%" BORDER="2" ALIGN="center">
+                <TR BGCOLOR= #E0EEEE>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+                <TR>
+                    <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE>
+                    <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            <br>
+
+            <p>Align RIGHT</p>
+            <TABLE WIDTH="150" HEIGHT="20%" BORDER="2" ALIGN="right">
+                <TR BGCOLOR= #E0EEEE>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+                    <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+                <TR>
+                    <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE>
+                    <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                    <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            
+            <br><br><br><br><br><br><hr><br>
+        </div>
+
+        <div> <!-- Atributo CELLSPACING -->
+            <h3>Atributo CELLSPACING</h3>
+            <br>
+            <p>Com CELLSPACING</p>
+            <TABLE WIDTH="300" HEIGHT="25%" BORDER="4" CELLSPACING="10">
+                <TR BGCOLOR= #E0F8E0>
+                        <TD ALIGN="center" VALIGN ="center" HEIGHT="40" COLSPAN="2"><FONT FACE= "Comic Sans MS"><B>CADASTRO DE CLIENTES</B></TD>
+                <TR BGCOLOR= #E0EEEE>
+                        <TD><FONT FACE= "Calibri"><B>Nome</B></TD><TD><FONT FACE= "Calibri"><B>Sobrenome</B></TD>
+                <TR>
+                        <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                        <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE><TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                        <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            <br>
+            <p>Sem CELLSPACING</p>
+            <TABLE WIDTH="300" HEIGHT="25%" BORDER="4">
+                <TR BGCOLOR= #E0F8E0>
+                        <TD ALIGN="center" VALIGN ="center" HEIGHT="40" COLSPAN="2"><FONT FACE= "Comic Sans MS"><B>CADASTRO DE CLIENTES</B></TD>
+                <TR BGCOLOR= #E0EEEE>
+                        <TD><FONT FACE= "Calibri"><B>Nome</B></TD><TD><FONT FACE= "Calibri"><B>Sobrenome</B></TD>
+                <TR>
+                        <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+                        <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+                <TR BGCOLOR = #E0EEEE><TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+                        <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+            </TABLE>
+            <br><hr><br>
+        </div>
+
+        <div> <!-- Atributo CELLPADDING -->
+            <h3>Atributo CELLPADDING</h3>
+            <br>
+            <p>Com CELLPADDING</p>
+            <br>
+            <TABLE WIDTH="300" HEIGHT="25%" BORDER="4" CELLSPACING="10" CELLPADDING="7">
+				<TR BGCOLOR= #E0F8E0>
+						<TD ALIGN="center" VALIGN ="center" HEIGHT="40" COLSPAN="2"><FONT FACE= "Comic Sans MS"><B>CADASTRO DE CLIENTES</B></TD>
+				<TR BGCOLOR= #E0EEEE>
+						<TD><FONT FACE= "Calibri"><B>Nome</B></TD>
+						<TD><FONT FACE= "Calibri"><B>Sobrenome</B></TD>
+				<TR>
+						<TD><FONT FACE= "Calibri">Anna</FONT></TD>
+						<TD><FONT FACE= "Calibri">Santos</FONT></TD>
+				<TR BGCOLOR = #E0EEEE>
+						<TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+						<TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+		    </TABLE>
+            <br>
+            <p>Sem CELLPADDING</p>
+            <br>
+            <TABLE WIDTH="300" HEIGHT="25%" BORDER="4" CELLSPACING="10" >
+				<TR BGCOLOR= #E0F8E0>
+						<TD ALIGN="center" VALIGN ="center" HEIGHT="40" COLSPAN="2"><FONT FACE= "Comic Sans MS"><B>CADASTRO DE CLIENTES</B></TD>
+				<TR BGCOLOR= #E0EEEE>
+						<TD><FONT FACE= "Calibri"><B>Nome</B></TD>
+						<TD><FONT FACE= "Calibri"><B>Sobrenome</B></TD>
+				<TR>
+						<TD><FONT FACE= "Calibri">Anna</FONT></TD>
+						<TD><FONT FACE= "Calibri">Santos</FONT></TD>
+				<TR BGCOLOR = #E0EEEE>
+						<TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+						<TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+		    </TABLE>
+            <br><hr><br>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

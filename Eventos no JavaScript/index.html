@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eventos em JavaScript</title>
+</head>
+
+<!-- Script do evento OnChange --> 
+<script>  
+function myFunction()
+{
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+</script>
+
+
+<body onload="checkCookies()"> <!-- Caracteristica do evento OnLoad --> 
+
+<div style="background: #00BFFF; padding: 5%; margin-bottom: 0.5%">
+	<h1>Evento Inline - Usando o evento onClick no Javascript</h1>
+	<p>Vamos ver um exemplo de como usar um evento de maneira inline em JavaScript. Dessa forma é preciso que tudo seja definido diretamente na tag do elemento, dessa forma:</p>
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	<h1 onclick="this.innerHTML='Isso acontece quando usamos o evento onClick!'"
+	>Clique nesse link para testar o evento onClick!</h1>
+</div>
+
+<div style="background: #40E0D0; padding: 5%; margin-bottom: 0.5%">
+	<h1>Usando evento externo</h1>
+
+	<p>Para chamar um evento externo iremos precisar de um manipulador de eventos, nesse caso vamos usar o "event listener que adiciona ou remove um evento sobre qualquer elemento. O "Event Listener" disponibiliza duas funções principais, são elas:</p>
+
+	<ul>
+		<li>addEvent - Adiciona uma função que será disparada quando ocorrer determinado evento no objeto.</li>
+		<li>removeEvent - Remove um listener previamente adicionado em um objeto e retorna true em caso de sucesso.</li>
+	</ul>
+
+	Agora vamos ver um exemplo de como utilizar o Event Listener.
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	<script type="text/javascript" src="/path/to/event-listener.js"></script>
+
+	<form>
+		<input type="text" name="a" />
+		<input type="submit" />
+	</form>
+
+	<script type="text/javascript">
+	var f = document.forms[0];
+	addEvent(f, "submit", function( e ) { alert(f.a.value);return false; });
+	addEvent(f.a, "keyup", function( e ) { f.a.value=f.a.value.toUpperCase(); });
+	</script>
+</div>
+
+
+<div style="background: #3CB371; padding: 5%; margin-bottom: 0.5%">
+	<h1>onLoad</h1>
+
+	<p>O evento onload pode ser usado quando queremos que algo seja carregado junto com o carregamento da página.</p>
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	<script>
+	function checkCookies()
+	{
+	if (navigator.cookieEnabled==true)
+		{
+		alert("Cookies são permitidos")
+		}
+	else
+		{
+		alert("Cookies não são permitidos")
+		}
+	}
+	</script>
+
+	<p>Irá aparecer um alert dizendo se os cookies estão ou não liberados em seu navegador</p>
+</div>
+
+
+<div style="background: #9932CC; padding: 5%; margin-bottom: 0.5%">
+	<h1>onChange</h1>
+
+	<p>O evento onChange é utilizado para que seja realizada determinada ação após alguma mudança. No exemplo abaixo iremos fazer essa mudança acontecer ao clicarmos fora do input text.</p>
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	Insira seu Nome: <input type="text" id="fname" onchange="myFunction()">
+	<p>
+	Ao clicarmos fora do input text o texto escrito nele ficará todo em caixa alta.</p>
+
+</div>
+
+
+<div style="background: #DA70D6; padding: 5%; margin-bottom: 0.5%">
+	<h1>onMouseOver e onMouseOut</h1>
+
+	<p>Esses eventos são responsáveis pelas ações que o usuário faz com o mouse, passando o mouse no elemento e tirando o mouse do elemento, respectivamente.</p>
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+	style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Passe o mouse em mim</div>
+
+	<script>
+	function mOver(obj)
+	{
+	obj.innerHTML="Obrigado"
+	}
+
+	function mOut(obj)
+	{
+	obj.innerHTML="Passe o mouse em mim"
+	}
+	</script>
+</div>
+
+
+<div style="background: #FF69B4; padding: 5%; margin-bottom: 0.5%">
+	<h1>onmousedown, onmouseup e onclick</h1>
+
+	<p>Nesse exemplo iremos ver como trabalhar com o clique, o segurar o clique e o soltar do clique.</p>
+
+	<p>--------------------------------------------------------------------------------------------------------------------------------</p>
+
+	<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+	style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Clique aqui</div>
+
+	<script>
+	function mDown(obj)
+	{
+	obj.style.backgroundColor="#1ec5e5";
+	obj.innerHTML="Solte o clique"
+	}
+
+	function mUp(obj)
+	{
+	obj.style.backgroundColor="#D94A38";
+	obj.innerHTML="Obrigado"
+	}
+	</script>
+</div>
+
+</body>
+</html>
